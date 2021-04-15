@@ -62,9 +62,26 @@ body {
   min-height: 100vh;
 }
 
+.portfolio {
+  display: -ms-grid;
+  display: grid;
+  height: 100%;
+  -ms-grid-rows: (100px)[6];
+      grid-template-rows: repeat(6, 100px);
+  -ms-grid-columns: (100px)[6];
+      grid-template-columns: repeat(6, 100px);
+  grid-gap: 20px;
+}
+
 .portfolio-item {
   background: #f96855;
   color: #353535;
   font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 /*# sourceMappingURL=styles.css.map */

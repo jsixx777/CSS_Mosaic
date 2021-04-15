@@ -75,9 +75,19 @@ body {
     min-height: 100vh;
 }
 
+.portfolio {
+    display: grid;
+    height: 100%;
+    grid-template-rows: repeat(6, 100px);
+    grid-template-columns: repeat(6, 100px);
+    grid-gap: 20px;
+}
+
 .portfolio-item {
     background: $accent;
     color: $body-background;
     font-weight: $font-bold;
+    display: flex;
+    justify-content: center;
 }
 
