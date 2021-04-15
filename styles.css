@@ -1,2 +1,70 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,100&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #353535;
+  color: #c4c4c4;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.2em;
+  line-height: 1.45;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.sidebar {
+  background: #4f4f4f;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 20%;
+          flex: 1 1 20%;
+  min-width: 300px;
+  padding: 3em;
+}
+
+.logo {
+  text-transform: uppercase;
+  margin-bottom: 2em;
+}
+
+.logo span {
+  font-weight: 700;
+}
+
+.nav-item {
+  color: #737373;
+  text-decoration: none;
+  font-size: 1.7em;
+  display: inline-block;
+  margin-right: 2em;
+}
+
+@media (min-width: 1500px) {
+  .nav-item {
+    display: block;
+    margin: 7vh 0;
+  }
+}
+
+.nav-item.active {
+  color: #c4c4c4;
+}
+
+.main-content {
+  padding: 10%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 80%;
+          flex: 1 1 80%;
+  min-height: 100vh;
+}
+
+.portfolio-item {
+  background: #f96855;
+  color: #353535;
+  font-weight: 700;
+}
 /*# sourceMappingURL=styles.css.map */
