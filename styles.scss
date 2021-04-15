@@ -78,8 +78,8 @@ body {
 .portfolio {
     display: grid;
     height: 100%;
-    grid-template-rows: repeat(3, 100px);
-    grid-template-columns: repeat(2, 100px);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     grid-gap: 20px;
 }
 
