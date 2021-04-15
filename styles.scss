@@ -89,6 +89,7 @@ body {
     font-weight: $font-bold;
     display: flex;
     justify-content: center;
+    align-items: center;
 
     &.small {
         grid-row: span 1;
@@ -129,6 +130,7 @@ body {
     &:hover {
         background-blend-mode: initial;
         background-position: center;
+        z-index: 10;
     }
 }
 
