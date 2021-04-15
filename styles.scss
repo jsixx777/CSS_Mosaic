@@ -89,5 +89,31 @@ body {
     font-weight: $font-bold;
     display: flex;
     justify-content: center;
+
+    &.small {
+        grid-row: span 1;
+        grid-column: span 1;
+    }
+
+    &.medium {
+        grid-row: span 2;
+        grid-column: span 2;
+    }
+
+    &.large {
+        grid-row: span 3;
+        grid-column: span 3;
+    }
+
+    &.tall {
+        grid-row: span 3;
+        grid-column: span 2;
+    }
+
+    &.wide {
+        grid-row: span 2;
+        grid-column: span 3;
+    }
 }
+
 
