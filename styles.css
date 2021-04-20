@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap");
+body {
+  background: black;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "a a b b b" "a a b b b" "c c b b b" "c c d e e" "f f f e e" "f f f e e";
+  -ms-grid-columns: 5fr 5fr 5fr 5fr 5fr;
+      grid-template-columns: 5fr 5fr 5fr 5fr 5fr;
+  -ms-grid-rows: 150px 150px 150px 150px 150px 150px;
+      grid-template-rows: 150px 150px 150px 150px 150px 150px;
+  color: yellow;
+  grid-column-gap: 1.5em;
+  grid-row-gap: 1.5em;
+}
+
+.square-one {
+  background: orange;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: a;
+}
+
+.square-two {
+  background: red;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 3;
+  grid-area: b;
+}
+
+.square-three {
+  background: blue;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: c;
+}
+
+.square-four {
+  background: green;
+  -ms-grid-row: 4;
+  -ms-grid-column: 3;
+  grid-area: d;
+}
+
+.square-five {
+  background: pink;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 2;
+  grid-area: e;
+}
+
+.square-six {
+  background: yellow;
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: f;
+}
+/*# sourceMappingURL=styles.css.map */

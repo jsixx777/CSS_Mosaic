@@ -1,3 +1,63 @@
 @import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
 
 
+$orange: orange;
+$black: black;
+$yellow: yellow;
+$meek: pink;
+$blue: blue;
+$red: red;
+$green: green;
+
+body {
+    
+    
+    background: $black;
+}
+
+.container {
+    display: grid;
+    grid-template-areas: 
+    "a a b b b"
+    "a a b b b"
+    "c c b b b"
+    "c c d e e"
+    "f f f e e"
+    "f f f e e"
+    ;
+    grid-template-columns: 5fr 5fr 5fr 5fr 5fr;
+    grid-template-rows: 150px 150px 150px 150px 150px 150px;
+    color: $yellow;
+    grid-column-gap: 1.5em;
+    grid-row-gap: 1.5em;
+}
+
+.square-one {
+    background: $orange;
+    grid-area: a;
+}
+.square-two {
+    background: $red;
+    grid-area: b;
+}
+
+.square-three {
+    background: $blue;
+    grid-area: c;
+}
+
+.square-four {
+    background: $green;
+    grid-area: d;
+
+}
+
+.square-five {
+    background: $meek;
+    grid-area: e;
+}
+
+.square-six {
+    background: $yellow;
+    grid-area: f;
+}
